@@ -29,6 +29,7 @@ const AuthForm = ({ type }: { type: string }) => {
     const router = useRouter();
     const [user, setUser] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+    
 
     const formSchema = authFormSchema(type);
 
@@ -124,7 +125,7 @@ const AuthForm = ({ type }: { type: string }) => {
                                 <>
                                     <div className="flex gap-4">
                                         <CustomInput control={form.control} name='firstName' label="First Name" placeholder='Enter your first name' />
-                                        <CustomInput control={form.control} name='lastName' label="Last Name" placeholder='Enter your first name' />
+                                        <CustomInput control={form.control} name='lastName' label="Last Name" placeholder='Enter your last name' />
                                     </div>
                                     <CustomInput control={form.control} name='address1' label="Address" placeholder='Enter your specific address' />
                                     <CustomInput control={form.control} name='city' label="City" placeholder='Enter your city' />
